@@ -1,0 +1,32 @@
+Scheduling Algorithm Documentation
+===============================
+
+Overview:
+The scheduling system employs a constraint-based approach to maximize time slot utilization while maintaining physician schedules and ensuring timely patient appointments.
+
+Key Features:
+1. Time Slot Management
+2. Doctor Availability Checks
+3. Conflict Prevention
+
+Algorithm Description:
+1. Initialize doctor's schedule with working hours and max appointments
+2. Generate time slots in 30-minute intervals for each working day
+3. For each new appointment request:
+   a. Validate doctor availability
+   b. Check for time slot conflicts
+   c. Verify maximum daily appointments
+   d. If all checks pass, book appointment
+4. Maintain appointment state:
+   a. Track booked, cancelled, and rescheduled appointments
+   b. Update available time slots accordingly
+
+Algorithm Benefits:
+- Efficient time slot management with O(log n) search complexity
+- Real-time conflict detection and prevention
+- Optimal resource utilization through constraint-based scheduling
+
+Conflict Prevention Strategies:
+1. Doctor Availability Check: Confirms doctor is scheduled for selected date
+2. Working Hours Validation: Ensures appointment falls within doctor's shift
+3. Double Booking Prevention: Prevents overlapping time slot reservations

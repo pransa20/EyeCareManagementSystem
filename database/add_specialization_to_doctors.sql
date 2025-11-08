@@ -1,0 +1,1 @@
+ALTER TABLE doctors ADD COLUMN specialization VARCHAR(255) NOT NULL DEFAULT '';

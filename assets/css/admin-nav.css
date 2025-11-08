@@ -1,0 +1,88 @@
+.admin-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+
+.admin-navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.admin-navbar .navbar-brand img {
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.admin-navbar .nav-link {
+    color: #34495e;
+    font-weight: 500;
+    padding: 1rem;
+    transition: all 0.3s ease;
+    display: block;
+    border-radius: 4px;
+    margin: 0.25rem 1rem;
+}
+
+.admin-navbar .nav-link:hover {
+    color: var(--primary-color);
+}
+
+.admin-navbar .nav-link.active {
+    color: var(--primary-color);
+}
+
+.admin-navbar .dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.admin-navbar .dropdown-item {
+    padding: 0.5rem 1.5rem;
+    color: #34495e;
+    transition: all 0.3s ease;
+}
+
+.admin-navbar .dropdown-item:hover {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+.admin-navbar .navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+}
+
+.admin-navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.admin-navbar .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+}
+
+@media (max-width: 991.98px) {
+    .admin-navbar .navbar-collapse {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-top: 0.5rem;
+    }
+}

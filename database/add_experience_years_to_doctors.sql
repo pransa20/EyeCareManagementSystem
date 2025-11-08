@@ -1,0 +1,1 @@
+ALTER TABLE doctors ADD COLUMN experience_years INT NOT NULL DEFAULT 0;
